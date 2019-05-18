@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+body {
+  font-family: Montserrat;
+  color: #aaaaaa;
+}
+
+header {
+  height: 6rem;
+  background-color: #119462;
+  color: white;
+  width: 100%;
+  text-decoration: none;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #feb729;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header .brand {
+  font-size: 1.7rem;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  header .brand {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+.container {
+  border: 1px solid black;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 576px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
+    max-width: 800px;
+    background-color: white;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 992px;
+    max-width: 1100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.card {
+  background-color: white;
+  margin-top: 3px;
+  margin-bottom: 12px;
+}
+
+.card .card-header {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  padding: 0.7rem;
+}
+
+.card .card-body {
+  padding: 0.7rem;
+}
+
+.card .card-footer {
+  color: #c4c4c4;
+  padding: 0.7rem;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 0px 5px 2px #ccc;
+  box-shadow: 0px 0px 5px 2px #ccc;
+}
+
+form input,
+form button {
+  display: block;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+
+form input:focus {
+  border-bottom: 1px solid #119462;
+}
+
+form label {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding-bottom: 4px;
+}
