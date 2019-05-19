@@ -10,9 +10,9 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="container" id="navContainer">
-          <a href="#" class="brand">Company Name</a>
+      <div class="container">
+        <a href="#" class="brand">Company Name</a>
+        <nav>
           <ul>
             <li>
               <a href="#"><i class="fas fa-search"></i> Search</a>
@@ -24,8 +24,8 @@
               <a href="#"><i class="fas fa-envelope-open-text"></i> Contact</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main>
       <div class="container">
@@ -38,8 +38,10 @@
           <div class="card-header">Test</div>
           <div class="card-body">
             <form action="#">
-              <label for="test1">Labelqyp</label>
-              <input id="test1" type="text" />
+              <div class="input-group">
+                <label for="test1">Labelqyp</label>
+                <input id="test1" type="text" placeholder="Enter something here..." />
+              </div>
               <button>Click me</button>
             </form>
           </div>

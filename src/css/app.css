@@ -181,10 +181,10 @@ header {
   height: 6rem;
   background-color: #119462;
   color: white;
-  width: 100%;
   text-decoration: none;
   margin-bottom: 8px;
   border-bottom: 1px solid #feb729;
+  position: relative;
 }
 
 header a {
@@ -192,13 +192,14 @@ header a {
   text-decoration: none;
 }
 
-header .brand {
+header a.brand {
   font-size: 1.7rem;
   float: left;
+  margin-top: 24px;
 }
 
-@media (min-width: 768px) {
-  header .brand {
+@media screen and (min-width: 768px) {
+  header a.brand {
     position: relative;
     display: inline-block;
     margin-left: auto;
@@ -208,6 +209,7 @@ header .brand {
 
 header nav {
   float: right;
+  margin-top: 28px;
 }
 
 header nav ul {
@@ -221,46 +223,39 @@ header nav ul li {
 }
 
 .container {
-  border: 1px solid black;
   position: relative;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   height: 100%;
 }
 
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
   .container {
     padding: 0 20px;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
-    margin-left: auto;
-    margin-right: auto;
     width: 768px;
     max-width: 800px;
-    background-color: white;
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .container {
-    margin-left: auto;
-    margin-right: auto;
     width: 992px;
     max-width: 1100px;
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 1300px;
   }
 }
 
-@media (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -278,15 +273,18 @@ header nav ul li {
   font-weight: 700;
   letter-spacing: 0.2rem;
   padding: 0.7rem;
+  overflow: hidden;
 }
 
 .card .card-body {
   padding: 0.7rem;
+  overflow: hidden;
 }
 
 .card .card-footer {
   color: #c4c4c4;
   padding: 0.7rem;
+  overflow: hidden;
 }
 
 .shadow {
@@ -294,15 +292,52 @@ header nav ul li {
   box-shadow: 0px 0px 5px 2px #ccc;
 }
 
+form {
+  display: block;
+}
+
 form input,
 form button {
+  outline: none;
+  border: none;
   display: block;
+  width: 100%;
   font-size: 1.2rem;
   padding: 0.7rem;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+form ::-webkit-input-placeholder {
+  color: #d0d0d0;
+  opacity: 1;
+}
+
+form :-ms-input-placeholder {
+  color: #d0d0d0;
+  opacity: 1;
+}
+
+form ::-ms-input-placeholder {
+  color: #d0d0d0;
+  opacity: 1;
+}
+
+form ::placeholder {
+  color: #d0d0d0;
+  opacity: 1;
 }
 
 form input:focus {
+  border-top: none;
   border-bottom: 1px solid #119462;
+  border-left: none;
+  border-right: none;
+}
+
+form button {
+  background-color: #119462;
+  color: #ffffff;
 }
 
 form label {
@@ -310,4 +345,10 @@ form label {
   font-size: 1.2rem;
   line-height: 1.2rem;
   padding-bottom: 4px;
+}
+
+.input-group {
+  display: block;
+  width: 100%;
+  overflow: hidden;
 }

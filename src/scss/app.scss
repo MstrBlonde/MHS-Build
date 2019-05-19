@@ -13,30 +13,32 @@ header {
   height: 6rem;
   background-color: $primary-color;
   color: white;
-  width: 100%;
   text-decoration: none;
   margin-bottom: 8px;
   border-bottom: 1px solid $secondary-color;
+  position: relative;
   a {
     color: #ffffff;
     text-decoration: none;
-  }
-  .brand {
-    font-size: 1.7rem;
-    float: left;
-    // 576px window width and more
-    @include md {
-      position: relative;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
+    &.brand {
+      font-size: 1.7rem;
+      float: left;
+      margin-top: 24px;
+      // 576px window width and more
+      @include md {
+        position: relative;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
+
   nav {
     float: right;
+    margin-top: 28px;
     ul {
       list-style: none;
-
       font-size: 1.1rem;
       li {
         display: inline-block;
@@ -47,9 +49,10 @@ header {
 }
 
 .container {
-  border: 1px solid black;
+  //border: 1px solid black;
   position: relative;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   height: 100%;
   // 576px window width and more
   @include sm {
@@ -57,22 +60,15 @@ header {
   }
   // 768px window width and more
   @include md {
-    margin-left: auto;
-    margin-right: auto;
     width: 768px;
     max-width: 800px;
-    background-color: white;
   }
   // 992px window width and more
   @include lg {
-    margin-left: auto;
-    margin-right: auto;
     width: 992px;
     max-width: 1100px;
   }
   @include xl {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 1300px;
   }
   // 1400px window width and more
@@ -90,13 +86,16 @@ header {
     font-weight: 700;
     letter-spacing: 0.2rem;
     padding: $padding;
+    overflow: hidden;
   }
   .card-body {
     padding: $padding;
+    overflow: hidden;
   }
   .card-footer {
     color: lighten($font-color, 10%);
     padding: $padding;
+    overflow: hidden;
   }
 }
 .shadow {
@@ -105,14 +104,32 @@ header {
   box-shadow: 0px 0px 5px 2px #ccc;
 }
 form {
+  //border: 1px #000000 solid;
+  display: block;
   input,
   button {
+    outline: none;
+    border: none;
     display: block;
+    width: 100%;
     font-size: 1.2rem;
     padding: $padding;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  ::placeholder {
+    color: lighten($font-color, 15%);
+    opacity: 1;
   }
   input:focus {
+    border-top: none;
     border-bottom: 1px solid $primary-color;
+    border-left: none;
+    border-right: none;
+  }
+  button {
+    background-color: $primary-color;
+    color: #ffffff;
   }
   label {
     display: block;
@@ -120,4 +137,11 @@ form {
     line-height: 1.2rem;
     padding-bottom: 4px;
   }
+}
+
+.input-group {
+  display: block;
+  width: 100%;
+  //border: 1px red solid;
+  overflow: hidden;
 }
