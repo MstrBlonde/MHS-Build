@@ -174,7 +174,7 @@ select {
 
 body {
   font-family: Montserrat;
-  color: #aaaaaa;
+  color: #3d3d3d;
 }
 
 header {
@@ -195,7 +195,7 @@ header a {
 header a.brand {
   font-size: 1.7rem;
   float: left;
-  margin-top: 24px;
+  margin-top: 28px;
 }
 
 @media screen and (min-width: 768px) {
@@ -209,7 +209,7 @@ header a.brand {
 
 header nav {
   float: right;
-  margin-top: 28px;
+  margin-top: 32px;
 }
 
 header nav ul {
@@ -282,7 +282,7 @@ header nav ul li {
 }
 
 .card .card-footer {
-  color: #c4c4c4;
+  color: #4a4a4a;
   padding: 0.7rem;
   overflow: hidden;
 }
@@ -292,12 +292,10 @@ header nav ul li {
   box-shadow: 0px 0px 5px 2px #ccc;
 }
 
-form {
-  display: block;
-}
-
 form input,
 form button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   outline: none;
   border: none;
   display: block;
@@ -309,28 +307,32 @@ form button {
 }
 
 form ::-webkit-input-placeholder {
-  color: #d0d0d0;
+  color: #a3a3a3;
   opacity: 1;
 }
 
 form :-ms-input-placeholder {
-  color: #d0d0d0;
+  color: #a3a3a3;
   opacity: 1;
 }
 
 form ::-ms-input-placeholder {
-  color: #d0d0d0;
+  color: #a3a3a3;
   opacity: 1;
 }
 
 form ::placeholder {
-  color: #d0d0d0;
+  color: #a3a3a3;
   opacity: 1;
+}
+
+form input {
+  border-bottom: 1px inset transparent;
 }
 
 form input:focus {
   border-top: none;
-  border-bottom: 1px solid #119462;
+  border-bottom: 1px inset #119462;
   border-left: none;
   border-right: none;
 }
@@ -351,4 +353,8 @@ form label {
   display: block;
   width: 100%;
   overflow: hidden;
+}
+
+.form-card {
+  background-color: #f4f4f4;
 }
